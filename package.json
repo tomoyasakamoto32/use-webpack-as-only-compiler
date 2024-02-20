@@ -1,0 +1,30 @@
+{
+  "name": "no-bundle-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build-sass": "npx webpack --config ./webpack.sass.config.js --mode=development",
+    "build-ts": "npx webpack --config ./webpack.typescript.config.js --mode=development"
+  },
+  "volta": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "glob": "^10.3.10",
+    "mini-css-extract-plugin": "^2.8.0",
+    "sass": "^1.71.0",
+    "sass-loader": "^14.1.1",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-remove-empty-scripts": "^1.0.4"
+  }
+}
